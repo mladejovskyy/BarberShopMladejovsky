@@ -411,7 +411,7 @@ nav {
 }
 
 .galleryImg img {
-    width: 22vw;
+    width: 23vw;
     transition: var(--transition);
 }
 
@@ -519,4 +519,37 @@ iframe {
 
 textarea {
     height: 15vh !important;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    height: 20vh;
+    background-color: #f1f1f1;
+    padding: 25px;
+}
+
+footer .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .center img {
+    height: 10vh;
+}
+
+footer .center p {
+    margin-top: 40px;
+}
+
+footer .center p a:hover {
+    border-bottom: 2px solid #221715;
 }
