@@ -26,7 +26,7 @@
         <div class="nav-center sticky">
             <!-- nav header -->
             <div class="nav-header">
-                <img src="images/mladejovskybarber.png" class="logo">
+                <a href="#"><img src="images/mladejovskybarber.png" class="logo"></a>
                 <button class="nav-toggle"><i class="fas fa-bars"></i></button>
             </div>
 
@@ -62,17 +62,7 @@
                 </li>
                 <li>
                     <a href="https://www.twitter.com">
-                        <i class="fab fa-behance"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com">
-                        <i class="fab fa-sketch"></i>
+                        <i class="fab fa-instagram"></i>
                     </a>
                 </li>
             </ul>
@@ -162,7 +152,7 @@
                     style="color: #ffd700;"></i>
             </div>
         </div>
-        <div class="review">
+        <div class="review phone-hide">
             <div class="image">
                 <img src="faces/face5.png" id="img2">
             </div>
@@ -176,7 +166,7 @@
                     style="color: #ffd700;"></i>
             </div>
         </div>
-        <div class="review">
+        <div class="review laptop-hide">
             <div class="image">
                 <img src="faces/face9.png" id="img3">
             </div>
@@ -212,13 +202,13 @@
                 <div class="galleryImg"><img src="gallery2/1-min.jpg" alt=""></div>
                 <div class="galleryImg"><img src="gallery2/2-min.jpg" alt=""></div>
                 <div class="galleryImg"><img src="gallery2/3-min.jpg" alt=""></div>
-                <div class="galleryImg"><img src="gallery2/4-min.jpg" alt=""></div>
+                <div class="galleryImg img-phone-hide"><img src="gallery2/4-min.jpg" alt=""></div>
             </div>
             <div class="row">
                 <div class="galleryImg"><img src="gallery2/5-min.jpg" alt=""></div>
                 <div class="galleryImg"><img src="gallery2/6-min.jpg" alt=""></div>
                 <div class="galleryImg"><img src="gallery2/7-min.jpg" alt=""></div>
-                <div class="galleryImg"><img src="gallery2/8-min.jpg" alt=""></div>
+                <div class="galleryImg img-phone-hide"><img src="gallery2/8-min.jpg" alt=""></div>
             </div>
         </div>
     </div>
@@ -278,30 +268,29 @@
 
 
     <div class="contact" id="contact">
-        <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20486.665899736985!2d14.420610094244578!3d50.07068466634185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94f2587681eb%3A0x6769020ab9059549!2sClassic%20Barber%20Shop!5e0!3m2!1scs!2scz!4v1680726595789!5m2!1scs!2scz"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe> -->
+
         <h2>Kontakt</h2>
         <form action="">
             <div>
-                <input type="text" placeholder="Jméno a Příjmení" class="form-control">
+                <input type="text" placeholder="Jméno a Příjmení" class="form-control" name="jmeno">
             </div>
             <div>
-                <input type="text" placeholder="Email" class="form-control">
+                <input type="text" placeholder="Email" class="form-control" name="email">
             </div>
             <div>
                 <textarea class="form-control" placeholder="Zde zanechte svou zprávu" id="floatingTextarea"
-                    name="message"></textarea>
+                    name="message" name="message"></textarea>
             </div>
             <div>
                 <button type="submit" class="sendBtn">Odeslat</button>
             </div>
         </form>
 
-
-
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20486.665899736985!2d14.420610094244578!3d50.07068466634185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94f2587681eb%3A0x6769020ab9059549!2sClassic%20Barber%20Shop!5e0!3m2!1scs!2scz!4v1680726595789!5m2!1scs!2scz"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </div>
 
 
@@ -312,15 +301,16 @@
 
 
     <!-- Footer -->
-
-    <footer>
-        <div class="center">
-            <img src="images/mladejovskybarber.png" alt="">
-            <p><a href="https://tomasmladejovsky.com/">© 2023 Tvorba webových stránek: <span>Tomáš Mladějovský</span>
-            </p>
-        </div>
-    </footer>
-
+    <div class="footer">
+        <footer>
+            <div class="center">
+                <a href="#"><img src="images/mladejovskybarber.png" alt=""></a>
+                <p><a href="https://tomasmladejovsky.com/">© 2023 Tvorba webových stránek: <span>Tomáš
+                            Mladějovský</span>
+                </p>
+            </div>
+        </footer>
+    </div>
 
 
 
