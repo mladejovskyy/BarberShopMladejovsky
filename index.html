@@ -14,8 +14,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Noto serif hebrew -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon">
 
     <title>BarberShop | Mladejovsky</title>
 </head>
@@ -86,14 +91,42 @@
 
     <div class="home" id="home">
 
-        <div class="headerLogo">
+        <!-- <div class="headerLogo">
             <img src="images/mladejovskybarberlogowhite.png" alt="">
         </div>
         <div class="rezervace">
             <a href="https://www.reservio.com/cs" target="_blank"><button class="reserveBtn">Rezervovat</button></a>
+        </div> -->
+
+        <div class="header">
+            <img src="images/mladejovskyBarberLog.png" alt="">
+
+            <p>Přesné střihy, dokonalá péče - to je to, co nabízíme v našem barbershopu.</p>
+
+            <a href="https://www.reservio.com/cs"><button class="btn btn-rezervace">Objednat se</button></a>
         </div>
 
+
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="about" id="about">
         <div class="container">
@@ -271,19 +304,32 @@
 
         <h2>Kontakt</h2>
         <form action="">
-            <div>
-                <input type="text" placeholder="Jméno a Příjmení" class="form-control" name="jmeno">
+            <div class="field-holder">
+                <input type="text" id="name" name="name" required class="form-control">
+                <label for="name">Vaše jméno</label>
             </div>
-            <div>
-                <input type="text" placeholder="Email" class="form-control" name="email">
+
+            <div class="field-holder">
+                <input type="email" id="email" name="email" required class="form-control">
+                <label for="email">Email</label>
             </div>
-            <div>
-                <textarea class="form-control" placeholder="Zde zanechte svou zprávu" id="floatingTextarea"
-                    name="message" name="message"></textarea>
+
+            <div class="field-holder">
+                <textarea name="message" id="message" cols="30" rows="10" required class="form-control"></textarea>
+                <label for="textarea">Zde nám zanechte zprávu</label>
             </div>
-            <div>
-                <button type="submit" class="sendBtn">Odeslat</button>
-            </div>
+
+            <!-- <div class="field-holder hidden">
+                <input type="text" id="title" class="form-control">
+                <label for="title">Title</label>
+            </div> -->
+
+            <button type="submit">ODESLAT</button>
+        </form>
+
+
+
+
         </form>
 
         <iframe
